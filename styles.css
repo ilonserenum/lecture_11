@@ -1,0 +1,271 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+}
+.header div{
+    display: flex;
+}
+.header a{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.header span {
+    margin-left: 15px;
+    color: #FA793C;
+    font-size: 18px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.header ul {
+    display: flex;
+    margin-right: 40px;
+}
+
+.header ul li a{
+    margin-left: 20px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.discovery {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+
+.column{
+    border: 1px solid #000000;
+}
+
+.column div{
+    padding: 18px 20px 15px 20px;
+}
+
+.column .readTime {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.column h5{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.column p{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.photographGrid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.photograph{
+    max-width: 1240px;
+    margin: auto;
+}
+.left-column{
+    display: grid;
+    row-gap: 80px;
+}
+.right-column{
+    display: grid;
+    row-gap: 23px;
+}
+.left-column div {
+    position: relative;
+}
+
+.left-column div div {
+    position: absolute;
+    bottom: 0;
+    padding: 35px;
+}
+
+.photograph img{
+    width: 100%;
+}
+
+.left-column h3, .left-column p {
+    color: #FFFFFF;
+}
+
+.readTime img {
+    width: auto;
+    margin-right: 13px;
+}
+
+.right-column .column{
+    /* margin-bottom: 23px; */
+}
+
+.footer {
+    background-color: #000000;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.footer span{
+    color: #FFFFFF;
+}
+
+
+.footer{
+    text-align: center;
+}
+.footer a {
+    display:inline-flex;
+    align-items: center;
+    margin: 35px;
+}
+
+.travelNews {
+    background-image: url(assets/Rectangle\ 1.svg);
+    background-size: cover;
+}
+
+.travelNewsContent {
+    max-width: 1240px;
+    margin: auto;
+    padding: 72px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.travelNewsLeftSide h1{
+    border-bottom: 1px solid #FFFFFF;
+    padding:  0 0 14px 14px;
+    color: #FFFFFF;
+    margin: 0;
+
+}
+.travelNewsLeftSide p{
+    padding-left: 20px;
+    color: #FFFFFF;
+    padding-top: 20px;
+    margin: 0;
+
+}
+
+.moreNews {
+    background-color: #FFFFFF;
+    max-width: 440px;
+    padding: 30px 40px;
+
+}
+
+.travelNewsLeftSide {
+    max-width: 532px;
+}
+
+.moreNews h3{
+    margin: 0;
+    padding: 0;
+}
+
+.moreNewsContent .moreNewsHeader {
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 8px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid black;
+}
+
+.moreNewsContent div div{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.moreNewsContent div img {
+    margin-right: 20px;
+}
+
+.moreNews h7 {
+    color: #FA793C;
+    
+}
+
+@media only screen and (max-width: 835px) {
+    .travelNewsContent {
+        /* max-width: 770px; */
+        display: block;
+        padding: 0;
+    }
+    .travelNewsLeftSide{
+        max-width: 100%;
+        margin: 0 65px;
+        padding: 30px 0 160px 0;
+    }
+
+    .moreNews {
+        max-width: 100%;
+        padding: 32px 0;
+
+    }
+    .moreNewsContent{
+        margin: 0 65px;
+    }
+    .moreNewsContent img{
+        display: none;
+    }
+    .moreNewsContent div div{
+        width: 49%;
+        display: inline-block;
+    }
+
+    .discovery {
+        margin: 0 65px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    .column:last-of-type{
+        display: none;
+    }
+
+    .photograph{
+        margin: 0 65px;
+    }
+
+    .photographGrid {
+        display: grid;
+        grid-template-columns: auto;
+    
+    }
+    .right-column{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    
+}
