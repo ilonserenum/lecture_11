@@ -5,14 +5,21 @@
     max-width: 1240px;
     margin: auto;
 }
-.header div{
+
+.burgermenu {
+    display: none;
+}
+
+.header div {
     display: flex;
 }
-.header a{
+
+.header a {
     display: flex;
     align-items: center;
     margin: 10px 0;
 }
+
 .header span {
     margin-left: 15px;
     color: #FA793C;
@@ -25,7 +32,7 @@
     margin-right: 40px;
 }
 
-.header ul li a{
+.header ul li a {
     margin-left: 20px;
     font-family: 'ABeeZee', sans-serif;
 }
@@ -35,7 +42,7 @@
     margin: auto;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;
@@ -46,11 +53,11 @@
 }
 
 
-.column{
+.column {
     border: 1px solid #000000;
 }
 
-.column div{
+.column div {
     padding: 18px 20px 15px 20px;
 }
 
@@ -59,13 +66,15 @@
     align-items: center;
     padding: 0;
 }
-.column h5{
+
+.column h5 {
     padding: 0;
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 24px;
 }
-.column p{
+
+.column p {
     padding: 0;
     margin-top: 0;
     margin-bottom: 6px;
@@ -79,18 +88,21 @@
 
 }
 
-.photograph{
+.photograph {
     max-width: 1240px;
     margin: auto;
 }
-.left-column{
+
+.left-column {
     display: grid;
     row-gap: 80px;
 }
-.right-column{
+
+.right-column {
     display: grid;
     row-gap: 23px;
 }
+
 .left-column div {
     position: relative;
 }
@@ -101,11 +113,12 @@
     padding: 35px;
 }
 
-.photograph img{
+.photograph img {
     width: 100%;
 }
 
-.left-column h3, .left-column p {
+.left-column h3,
+.left-column p {
     color: #FFFFFF;
 }
 
@@ -114,7 +127,7 @@
     margin-right: 13px;
 }
 
-.right-column .column{
+.right-column .column {
     /* margin-bottom: 23px; */
 }
 
@@ -124,16 +137,17 @@
     margin-top: 70px;
 }
 
-.footer span{
+.footer span {
     color: #FFFFFF;
 }
 
 
-.footer{
+.footer {
     text-align: center;
 }
+
 .footer a {
-    display:inline-flex;
+    display: inline-flex;
     align-items: center;
     margin: 35px;
 }
@@ -152,14 +166,15 @@
 }
 
 
-.travelNewsLeftSide h1{
+.travelNewsLeftSide h1 {
     border-bottom: 1px solid #FFFFFF;
-    padding:  0 0 14px 14px;
+    padding: 0 0 14px 14px;
     color: #FFFFFF;
     margin: 0;
 
 }
-.travelNewsLeftSide p{
+
+.travelNewsLeftSide p {
     padding-left: 20px;
     color: #FFFFFF;
     padding-top: 20px;
@@ -178,20 +193,20 @@
     max-width: 532px;
 }
 
-.moreNews h3{
+.moreNews h3 {
     margin: 0;
     padding: 0;
 }
 
 .moreNewsContent .moreNewsHeader {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-bottom: 8px;
     margin-bottom: 17px;
     border-bottom: 1px solid black;
 }
 
-.moreNewsContent div div{
+.moreNewsContent div div {
     border: none;
     padding: 0;
     margin: 0;
@@ -203,16 +218,26 @@
 
 .moreNews h7 {
     color: #FA793C;
-    
+
+}
+
+.mobile-menu {
+    display: none;
 }
 
 @media only screen and (max-width: 835px) {
+
+    .burgermenu {
+        display: none;
+    }
+
     .travelNewsContent {
         /* max-width: 770px; */
         display: block;
         padding: 0;
     }
-    .travelNewsLeftSide{
+
+    .travelNewsLeftSide {
         max-width: 100%;
         margin: 0 65px;
         padding: 30px 0 160px 0;
@@ -223,13 +248,16 @@
         padding: 32px 0;
 
     }
-    .moreNewsContent{
+
+    .moreNewsContent {
         margin: 0 65px;
     }
-    .moreNewsContent img{
+
+    .moreNewsContent img {
         display: none;
     }
-    .moreNewsContent div div{
+
+    .moreNewsContent div div {
         width: 49%;
         display: inline-block;
     }
@@ -237,35 +265,174 @@
     .discovery {
         margin: 0 65px;
     }
-    .grid{
-        display: grid;
+
+    .grid {
         grid-template-columns: auto auto;
-        gap: 20px;
+
     }
 
-    .column:last-of-type{
+    .column:last-of-type {
         display: none;
     }
 
-    .photograph{
+    .photograph {
         margin: 0 65px;
     }
 
     .photographGrid {
         display: grid;
         grid-template-columns: auto;
-    
+
     }
-    .right-column{
+
+    .right-column {
         display: grid;
         grid-template-columns: auto auto;
         gap: 20px;
     }
 
+    .mobile-menu {
+        display: none;
+    }
 }
 
 
 @media only screen and (max-width: 375px) {
 
-    
+    .travelNewsContent {
+        display: block;
+        padding: 14px 0;
+    }
+
+    .moreNewsContent div div {
+        width: 100%;
+        display: block;
+    }
+
+    .photograph {
+        margin: 0 14px;
+    }
+
+    .travelNewsLeftSide {
+        margin: 0 14px;
+    }
+
+    .moreNewsContent {
+        margin: 0 14px;
+    }
+
+    .discovery {
+        margin: 0 14px;
+    }
+
+    .grid {
+
+        grid-template-columns: auto;
+    }
+
+
+    .right-column .column:nth-of-type(2) {
+        display: none;
+    }
+
+    .moreNewsHeader h3 {
+        width: 100%;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    .left-column img {
+        height: 700px;
+        width: auto;
+    }
+
+    .left-column div {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .burgermenu {
+        display: block;
+    }
+
+    .header {
+        padding: 9px 14px;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        background-color: white;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile-menu-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    .mobile-menu-logo-a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 18px;
+        color: #FA793C;
+        font-family: "Pridi";
+    }
+
+    .mobile-menu-logo-img {
+        padding-right: 10px;
+    }
+
+    .mobile-menu-list {
+        margin-top: 60px;
+        margin-left: 60px;
+    }
+
+    .mobile-menu-list li {
+        font-family: "ABeeZee";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 19px;
+        color: #000000;
+        padding-bottom: 40px;
+    }
+
+    .mobile-menu-list li a {
+        color: #000000;
+    }
+
+    .mobile-menu-footer {
+        position: relative;
+        bottom: 0;
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu-footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu-bottom-text {
+        color: white;
+        font-family: "Pridi";
+        font-size: 18px;
+    }
 }
